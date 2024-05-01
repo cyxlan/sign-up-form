@@ -6,6 +6,18 @@
   font-style: normal;
 }
 
+:root {
+  --white: #fff;
+  --accent: #596d48;
+  --error: #c64646;
+  --bg: #f9fafb;
+  --label: #303030;
+  --border: #e5e7eb;
+  --border-focus: #476fdf;
+  --shadow-dark: rgba(0, 0, 0, 0.5);
+  --shadow-light: rgba(0, 0, 0, 0.25);
+}
+
 body {
   font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
 }
@@ -13,7 +25,7 @@ body {
 /* sidebar */
 .sidebar-container {
   position: fixed;
-  background: darkgreen;
+  background: var(--accent);
   background: no-repeat center / cover url("../img/sidebar-bg.jpg");
   height: 100vh;
   width: max(30%, 450px);
@@ -22,7 +34,7 @@ body {
 }
 
 .logo-overlay {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--shadow-dark);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,7 +48,7 @@ body {
     height: auto;
   }
   h1 {
-    color: #fff;
+    color: var(--white);
     text-transform: uppercase;
     font-size: 4rem;
     font-family: "Norse Bold", fantasy;
@@ -45,7 +57,7 @@ body {
 
 .photo-credit {
   margin: auto 0 10px; /* bottom align */
-  color: #fff;
+  color: var(--white);
   font-size: 0.8rem;
 
   a {
@@ -58,7 +70,7 @@ body {
   margin-left: max(30%, 450px);
   display: flex;
   flex-direction: column;
-  background-color: #f9fafb;
+  background-color: var(--bg);
   width: calc(100% - max(30%, 450px));
   padding: 40px;
 }
@@ -80,8 +92,8 @@ legend {
 
 /* form */
 fieldset {
-  background-color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.25) 0 5px 20px;
+  background-color: var(--white);
+  box-shadow: var(--shadow-light) 0 5px 20px;
   padding: 50px 40px;
   margin: 40px -40px;
   display: flex;
@@ -106,25 +118,25 @@ legend {
     font-size: 0.8rem;
     letter-spacing: 1px;
     font-weight: 500;
-    color: #303030;
+    color: var(--label);
     margin-bottom: 5px;
   }
   input {
-    outline: 2px solid #e5e7eb;
+    outline: 2px solid var(--border);
     border-radius: 5px;
     padding: 5px 10px;
     font-size: 0.9rem;
 
     &:focus {
-      outline-color: #476fdf;
-      box-shadow: rgba(0, 0, 0, 0.25) 0 5px 10px;
+      outline-color: var(--border-focus);
+      box-shadow: var(--shadow-light) 0 5px 10px;
     }
     &:invalid {
-      outline-color: #c64646;
+      outline-color: var(--error);
     }
   }
   .error-msg {
-    color: #c64646;
+    color: var(--error);
     font-size: 0.8rem;
     margin-top: 5px;
     visibility: hidden;
@@ -132,8 +144,8 @@ legend {
 }
 
 button[type="submit"] {
-  background-color: darkgreen;
-  color: #fff;
+  background-color: var(--accent);
+  color: var(--white);
   font-weight: 600;
   padding: 10px 50px;
   margin-bottom: 40px;
@@ -141,7 +153,7 @@ button[type="submit"] {
 
 .login-link {
   font-weight: 600;
-  color: darkgreen;
+  color: var(--accent);
 
   &:hover {
     text-decoration: underline;
