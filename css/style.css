@@ -20,6 +20,7 @@
 
 body {
   font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+  background-color: var(--bg);
 }
 
 /* sidebar */
@@ -70,7 +71,6 @@ body {
   margin-left: max(30%, 450px);
   display: flex;
   flex-direction: column;
-  background-color: var(--bg);
   width: calc(100% - max(30%, 450px));
   padding: 40px;
 }
