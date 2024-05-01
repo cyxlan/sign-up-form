@@ -8,10 +8,10 @@
 
 :root {
   --white: #fff;
+  --dark: #303030;
   --accent: #596d48;
   --error: #c64646;
   --bg: #f9fafb;
-  --label: #303030;
   --border: #e5e7eb;
   --border-focus: #476fdf;
   --shadow-dark: rgba(0, 0, 0, 0.5);
@@ -118,7 +118,7 @@ legend {
     font-size: 0.8rem;
     letter-spacing: 1px;
     font-weight: 500;
-    color: var(--label);
+    color: var(--dark);
     margin-bottom: 5px;
   }
   input {
@@ -148,14 +148,22 @@ button[type="submit"] {
   color: var(--white);
   font-weight: 600;
   padding: 10px 50px;
+  border-radius: 10px;
+  box-shadow: var(--shadow-light) 0 5px 10px;
   margin-bottom: 40px;
+
+  &:hover,
+  &:focus {
+    background-color: var(--dark);
+  }
 }
 
 .login-link {
   font-weight: 600;
   color: var(--accent);
 
-  &:hover {
+  &:hover,
+  &:focus {
     text-decoration: underline;
   }
 }
