@@ -110,6 +110,21 @@ legend {
   label {
     text-transform: uppercase;
     font-size: 0.8rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #303030;
+    margin-bottom: 5px;
+  }
+  input {
+    outline: 2px solid #e5e7eb;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+
+    &:focus {
+      outline-color: #476fdf;
+      box-shadow: rgba(0, 0, 0, 0.25) 0 5px 10px;
+    }
   }
 }
 
