@@ -41,16 +41,31 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: #f9fafb;
+  width: calc(100% - max(30%, 450px));
 }
 
 .top-text {
   padding: 40px;
-  font-weight: 600;
-  font-size: 1.1rem;
-  line-height: 1.4rem;
   max-width: 750px;
 
   p + p {
     margin-top: 20px;
   }
+}
+
+.top-text p,
+legend {
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+}
+
+/* form */
+fieldset {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 5px 20px;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
 }
