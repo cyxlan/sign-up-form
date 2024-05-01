@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Norse Bold';
+  src: url('../fonts/norse-bold-webfont.woff2') format('woff2'),
+       url('../fonts/norse-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
 }
@@ -35,7 +43,8 @@ main {
   h1 {
     color: #fff;
     text-transform: uppercase;
-    font-size: 2.5rem;
+    font-size: 4rem;
+    font-family: "Norse Bold", fantasy;
   }
 }
 
