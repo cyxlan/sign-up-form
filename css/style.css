@@ -88,7 +88,7 @@ legend {
 fieldset {
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.25) 0 5px 20px;
-  padding: 20px 40px 40px;
+  padding: 20px 40px;
   margin: 40px -40px;
   display: flex;
   flex-direction: column;
@@ -125,6 +125,15 @@ legend {
       outline-color: #476fdf;
       box-shadow: rgba(0, 0, 0, 0.25) 0 5px 10px;
     }
+    &:invalid {
+      outline-color: #c64646;
+    }
+  }
+  .error-msg {
+    color: #c64646;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    visibility: hidden;
   }
 }
 
