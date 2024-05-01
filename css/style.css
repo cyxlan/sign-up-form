@@ -1,3 +1,6 @@
+body {
+  font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+}
 main {
   display: flex;
   height: 100vh;
@@ -8,7 +11,7 @@ main {
 .sidebar-container {
   background-color: darkgreen;
   height: 100%;
-  width: 30%;
+  width: max(30%, 450px);
   position: relative;
 }
 
@@ -30,5 +33,24 @@ main {
     color: #fff;
     text-transform: uppercase;
     font-size: 2.5rem;
+  }
+}
+
+/* main content */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.top-text {
+  padding: 40px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+  max-width: 750px;
+
+  p + p {
+    margin-top: 20px;
   }
 }
