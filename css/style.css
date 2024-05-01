@@ -76,7 +76,7 @@ body {
 }
 
 .top-text {
-  max-width: 65ch;
+  max-width: 725px;
 
   p + p {
     margin-top: 20px;
