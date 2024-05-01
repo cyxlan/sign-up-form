@@ -96,4 +96,14 @@ button[type="submit"] {
   color: #fff;
   font-weight: 600;
   padding: 10px 50px;
+  margin-bottom: 40px;
+}
+
+.login-link {
+  font-weight: 600;
+  color: darkgreen;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
